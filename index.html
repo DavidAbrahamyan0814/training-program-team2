@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/sudoku.png" href="image/sudoku.png ">
+    <title>sudoku</title>
+  </head>
+  <body>
+    <header>
+      
+      <nav>
+
+        <a href="#" class="nav_link">Save Game</a>
+        
+        <a href="#" class="nav_link">Restore Game</a>
+        
+        <a href="#" class="nav_link">Clear Board</a>
+        
+        <a href="#" class="nav_link">Step</a>
+        
+        <a href="#" class="nav_link">Solve</a>
+      </nav>
+
+      
+      <div>
+        <button id="theme-toggle">
+          <img id="sun-icon" src="image/sun.png" alt="Светлая тема" style="display: none;">
+          <img id="moon-icon" src="image/moon.png" alt="Темная тема">
+        </button>
+      </div>
+    </header>
+    <div class="sudoku_body">
+      <table class="sudoku-board">
+
+        <tr>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+        </tr>
+
+        <tr>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+        </tr>
+
+        <tr>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+        </tr>
+
+        <tr>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+        </tr>
+
+        <tr>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+        </tr>
+
+        <tr>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+        </tr>
+
+        <tr>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+        </tr>
+
+        <tr>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+        </tr>
+
+        <tr>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+          <td><input type="number" min="1" max="9"></td>
+        </tr>
+      </table>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
